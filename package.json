@@ -30,10 +30,11 @@
     "supabase"
   ],
   "engines": {
-    "node": "18.12.1"
+    "node": ">=17"
   },
   "os": [
-    "win32"
+    "win32",
+    "linux"
   ],
   "scripts": {
     "dev": "next dev",
