@@ -1,0 +1,16 @@
+// Code Spell Checker settings
+{
+  "version": "0.2",
+  "language": "en",
+  // words - list of words to be always considered correct
+  "words": ["noimageindex", "strikethrough", "supabase"],
+  // flagWords - For example "hte" should be "the"
+  "flagWords": ["hte"],
+  "ignorePaths": [
+    "package.json",
+    "package-lock.json",
+    "node_modules/",
+    "/.next/",
+    "/.contentlayer"
+  ]
+}

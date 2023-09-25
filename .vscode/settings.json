@@ -1,0 +1,24 @@
+{
+  "editor.mouseWheelZoom": true,
+  "code-runner.runInTerminal": true,
+  "tabnine.experimentalAutoImports": true,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "explorer.confirmDelete": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
+  "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontLigatures": true,
+  "workbench.editor.untitled.hint": "hidden",
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "svg.preview.mode": "svg",
+  "editor.formatOnSave": true,
+  "window.zoomLevel": 1,
+  "glassit.alpha": 245
+}
