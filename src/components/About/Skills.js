@@ -32,7 +32,7 @@ const animations = [
   "zoom-out-up",
   "zoom-out-down",
   "zoom-out-left",
-  "zoom-out-right",
+  "zoom-out-right"
 ];
 
 const getRandomAnimation = () =>
@@ -46,7 +46,7 @@ const Skills = () => {
   return (
     <section
       className="w-full flex flex-col p-5 xs:p-10 sm:p-12 md:p-16 lg:p-20 border-b-2 border-solid border-dark dark:border-light
-     text-dark dark:text-light"
+     text-dark dark:text-light overflow-hidden"
     >
       <span className="font-semibold text-lg sm:text-3xl md:text-4xl text-accent dark:text-accentDark">
         <strong>I'm comfortable in...</strong>

@@ -98,8 +98,9 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 }
 
 [data-rehype-pretty-code-caption] {
-  position: absolute;
-  top: 100%;
+  /* position: relative;
+  top: 100%; */
+  margin-top: -1rem;
   width: 100%;
   text-align: center;
   font-size: 1rem;
@@ -107,3 +108,26 @@ code[data-line-numbers-max-digits="3"] > [data-line]::before {
 }
 
 /* ---------end-------- counterlayer extents and reset's for markdown ---------end-------- */
+
+.dark .customGradientFooterBgColor {
+  background: rgb(230, 237, 255);
+  background: -moz-linear-gradient(
+    140deg,
+    rgb(188 207 255) 0%,
+    rgba(136, 154, 205, 1) 50%,
+    rgb(139 67 253) 100%
+  );
+  background: -webkit-linear-gradient(
+    140deg,
+    rgb(188 207 255) 0%,
+    rgba(136, 154, 205, 1) 50%,
+    rgb(139 67 253) 100%
+  );
+  background: linear-gradient(
+    140deg,
+    rgb(188 207 255) 0%,
+    rgba(136, 154, 205, 1) 50%,
+    rgb(139 67 253) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6edff",endColorstr="#3d5598",GradientType=1);
+}

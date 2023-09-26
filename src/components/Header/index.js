@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { cx } from "@/src/utils";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import LeftLogo from "@/src/components/Header/LeftLogo";
 import { MoonIcon, SunIcon } from "@/src/components/Icons";
 import { useThemeSwitch } from "@/src/components/Hooks/useThemeSwitch";
 import RightSocialLinks from "@/src/components/Header/RightSocialLinks";
 
 const Header = () => {
+  const uuid = useId();
+
   const [mode, setMode] = useThemeSwitch();
 
   const [click, setClick] = useState(false);
@@ -30,7 +32,7 @@ const Header = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, [click]);
 
-  const NavCommComp = () => (
+  const NavCommComp = ({ uuidForIcon: uuid }) => (
     <>
       <Link href="/" className="mr-2 transition hover:text-slate-600">
         Home
@@ -53,9 +55,9 @@ const Header = () => {
         aria-label="theme-switcher"
       >
         {mode === "light" ? (
-          <MoonIcon className={"fill-dark"} />
+          <MoonIcon className={"fill-dark"} uid={`moonIcon${uuid}`} />
         ) : (
-          <SunIcon className={"fill-dark"} />
+          <SunIcon className={"fill-dark"} uid={`sunIcon_${uuid}`} />
         )}
       </button>
     </>
@@ -85,16 +87,14 @@ const Header = () => {
               style={{
                 transform: click
                   ? "rotate(-45deg) translateY(0)"
-                  : "rotate(0deg) translateY(6px)",
+                  : "rotate(0deg) translateY(6px)"
               }}
             >
               &nbsp;
             </span>
             <span
               className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200 left-0"
-              style={{
-                opacity: click ? 0 : 1,
-              }}
+              style={{ opacity: click ? 0 : 1 }}
             >
               &nbsp;
             </span>
@@ -103,7 +103,7 @@ const Header = () => {
               style={{
                 transform: click
                   ? "rotate(45deg) translateY(0)"
-                  : "rotate(0deg) translateY(-6px)",
+                  : "rotate(0deg) translateY(-6px)"
               }}
             >
               &nbsp;
@@ -117,11 +117,11 @@ const Header = () => {
         className={`${navS_comm_classS} transition-all ease duration-300 px-6 sm:px-8 flex sm:hidden`}
         style={{ top: click ? "1rem" : "-5rem" }}
       >
-        <NavCommComp />
+        <NavCommComp uuidForIcon={`__1nd_largeSrc_nav__${uuid}`} />
       </nav>
 
       <nav className={`${navS_comm_classS} px-8 hidden sm:flex`}>
-        <NavCommComp />
+        <NavCommComp uuidForIcon={`__2nd_mobile_nav__${uuid}`} />
       </nav>
 
       <RightSocialLinks />
