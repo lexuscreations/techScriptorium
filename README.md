@@ -18,6 +18,7 @@
 <!-- code --list-extensions > .vscode/extensions -->
 <!-- git bash - https://git-scm.com/downloads -->
 <!-- socialBanner need to update, in utils/siteMetaData.js -->
+<!-- copyCodeToClipboardBtn, onPageVeryTopHorizontalLine, progressHorizontalTopLine functionality -->
 
 <hr />
 
@@ -60,7 +61,7 @@ For more Images please check the [project images](https://github.com/codebucks27
 - Character image in the About page created by using [Bing Search[(https://www.bing.com/).
 - Lottie animation in the contact page: [from here](https://lottiefiles.com/animations/sloth-meditate-SzNofNFhYY)
 - Fonts from https://fonts.google.com/ <br />
-- Icons from https://iconify.design/ <br />
+- Icons from https://iconify.design/ and im using react-icons <br />
 
 ### All the images used in the blogs:
 

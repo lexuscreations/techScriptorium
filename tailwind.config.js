@@ -13,19 +13,29 @@ module.exports = {
         light: "#f0f0f0",
         accent: "#11307a",
         accentDark: "#889acd",
+        accentDarkHover: "#0a2259",
+        accentDarkActive: "#071a46",
         gray: "#2a2b2e"
       },
       fontFamily: {
         mr: ["var(--font-mr)"],
         in: ["var(--font-in)"]
       },
+      boxShadow: {
+        "3xl": "0 0 20px 0px #00000057"
+      },
       animation: {
-        roll: "roll 24s linear infinite"
+        roll: "roll 24s linear infinite",
+        gototop: "gototop 3s linear infinite alternate-reverse"
       },
       keyframes: {
         roll: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(-100%)" }
+        },
+        gototop: {
+          "0%, 100%": { transform: "translateY(-0.1rem)" },
+          "50%": { transform: "translateY(0.1rem)" }
         }
       },
       screens: {

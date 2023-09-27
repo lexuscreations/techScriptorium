@@ -6,6 +6,7 @@ import { slug } from "github-slugger";
 import Tag from "@/src/components/Elements/Tag";
 import { allBlogs } from "contentlayer/generated";
 import siteMetadata from "@/src/utils/siteMetaData";
+import ScrollTopBtn from "@/src/components/ScrollTop/";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
 
@@ -180,6 +181,7 @@ export default function BlogPage({ params }) {
           <RenderMdx blog={blog} />
         </div>
       </article>
+      <ScrollTopBtn />
     </>
   );
 }

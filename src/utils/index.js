@@ -18,3 +18,15 @@ export const isContainsDotComThenSlash = (
 ) => {
   for (const tld of allowedTLDs) return link.indexOf(tld + "/") !== -1;
 };
+
+export function debounce(func, delay) {
+  let timeoutId;
+  return function () {
+    const context = this;
+    const args = arguments;
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
+      func.apply(context, args);
+    }, delay);
+  };
+}

@@ -64,18 +64,18 @@ const Header = () => {
   );
 
   const navS_comm_classS =
-    "w-max py-3 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-40";
+    "w-max py-3 border border-solid border-dark rounded-full font-medium capitalize items-center fixed top-6 right-1/2 translate-x-1/2 bg-light/80 backdrop-blur-sm z-30";
 
   return (
     <header
-      className={`w-full p-4 px-5 sm:px-10 flex items-center justify-between z-50 ${
+      className={`w-full p-4 px-5 sm:px-10 flex items-center justify-between z-30 ${
         click ? "static" : "sticky"
       } -top-1 sm:static bg-inherit`}
     >
       <LeftLogo click={click} />
 
       <button
-        className="inline-block sm:hidden z-40 mr-4 transition-all ease duration-300 relative py-2"
+        className="inline-block sm:hidden mr-4 transition-all ease duration-300 relative py-2"
         onClick={() => setClick(true)}
         aria-label="Hamburger Menu"
         style={{ top: !click ? "0rem" : "-5rem" }}
