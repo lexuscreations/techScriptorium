@@ -1,3 +1,5 @@
+### For files checkout - [github/lexuscreations/techScriptoriumFiles](https://github.com/lexuscreations/techScriptoriumFiles/tree/main)
+
 <!-- https://favicon.io/favicon-converter/ -->
 <!-- supabase -->
 <!-- https://www.react-hook-form.com/form-builder/ -->

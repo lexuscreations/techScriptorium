@@ -12,7 +12,11 @@ tags:
 
 **Uncover Hidden Treasures in Deeply Nested Objects with JavaScript**
 
+---
+
 Do you find yourself lost in the labyrinth of nested JavaScript objects, desperately seeking that one elusive key? You're not alone! Nested objects can be tricky to navigate, but fear not; we've got a solution for you. In this article, we'll dive into the world of deep nested objects and explore two handy methods: `find` and `findAll`, which can help you unearth the hidden gems within.
+
+---
 
 # The Deep Nesting Conundrum
 Imagine you have a complex JavaScript object like this:
@@ -66,6 +70,7 @@ const deepNestedObject = {
 
 You know there's valuable data hidden deep inside, but how do you access it without getting lost in the layers of nesting? This is where the `find` and `findAll` methods come to the rescue.
 
+---
 
 # The find Method
 The `find` method is like a treasure map for your nested objects. It helps you find the first occurrence of a specified key, no matter how deeply it's buried. Let's take a closer look at how it works:
@@ -99,8 +104,18 @@ Object.prototype.find = function (key) {
 
 ```javascript showLineNumbers title="index.js" caption="this code shows calling or usages of this find function"
 ...
-const result = deepNestedObject.find("finalKey");
-console.log(result);
+{
+  // find-Result, For Existing Key
+  const result = deepNestedObject.find("finalKey");
+  console.log(result); // Found 2 level deep!
+}
+
+{
+  // find-Result, For Non Existing Key
+  const findResultForNonExistingKey = deepNestedObject.find("nonExistentKey");
+  console.log(findResultForNonExistingKey); // null
+}
+...
 ```
 ___
 
@@ -108,7 +123,8 @@ ___
 But what if there are multiple occurrences of the same key? The findAll method comes to your rescue! It's like a metal detector that uncovers all instances of the specified key within the nested object:
 
 ```javascript showLineNumbers title="index.js" caption="this file contains javascript Object.findAll function code"
-Object.prototype.findAll = function (key) {
+...
+Object.prototype.findAll = function (key, defaultValue = []) {
   if (typeof key !== "string" || key === "") return null;
 
   const stack = [this];
@@ -129,10 +145,34 @@ Object.prototype.findAll = function (key) {
     }
   }
 
-  return foundValues.length > 0 ? foundValues : null;
+  return foundValues.length > 0 ? foundValues : defaultValue;
 };
 ...
 ```
+
+<hr style={{    marginTop: "3rem", marginBottom: "0rem"}} />
+
+```javascript showLineNumbers title="index.js" caption="this code shows calling or usages of this findAll function"
+...
+{
+  // findAll-Result, For Existing Key
+  const result = deepNestedObject.findAll("finalKey");
+  console.log(result); // [ 'Found 2 level deep!', 'This is the deepest level!' ]
+}
+
+{
+  // findAll-Result, For Non Existing Key
+  const result = deepNestedObject.findAll("nonExistentKey");
+  console.log(result); // []
+}
+
+{
+  // findAll-Result, For Non Existing Key And Passing Second Parameter As Default Value
+  const result = deepNestedObject.findAll("nonExistentKey", null);
+  console.log(result); // null
+}
+```
+___
 
 The findAll method tirelessly searches every nook and cranny of your nested object, ensuring you don't miss a single treasure trove of data.
 
