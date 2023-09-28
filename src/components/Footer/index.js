@@ -72,16 +72,16 @@ const Footer = () => {
       <div className="dark:bg-accentDark/90 bg-dark w-full mt-16 relative font-medium border-t border-solid border-light p-2 md:py-4 md:px-8 flex flex-col md:flex-row items-center justify-between rounded-xl">
         <Link
           href="/sitemap.xml"
-          className="text-center underline-offset-2 underline md:my-0"
+          className="text-center underline-offset-2 underline md:my-0 transition duration-150 ease-in-out transition-all hover:scale-105 active:scale-100"
         >
           <strong>sitemap.xml</strong>
         </Link>
 
-        <div className="text-center">
+        <div className="text-center flex">
           Made with &hearts; by{" "}
           <a
             href="https://github.com/lexuscreations"
-            className="underline underline-offset-2"
+            className="underline underline-offset-2 block transition duration-150 ease-in-out transition-all hover:scale-105 active:scale-100 ml-1"
             target="_blank"
           >
             LexusCreations
