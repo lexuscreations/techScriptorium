@@ -60,7 +60,10 @@ export default function About() {
         <h2 className="mt-8 font-semibold text-lg md:text-2xl text-center mx-5 xs:mx-10 sm:mx-12 md:mx-16 lg:mx-20 text-dark dark:text-light dark:font-normal">
           Have a personal project in mind? Reach out to me for collaboration 📞
           from{" "}
-          <Link href="/contact" className="!underline underline-offset-4">
+          <Link
+            href="/contact"
+            className="!underline underline-offset-4 transition duration-150 ease-in-out transition-all pt-0 pr-1 pb-1 pl-1 rounded-md hover:bg-slate-400 hover:text-white"
+          >
             here
           </Link>{" "}
           and let's make it happen.

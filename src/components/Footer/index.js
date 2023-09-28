@@ -42,7 +42,7 @@ const Footer = () => {
 
           <input
             type="submit"
-            className="bg-dark text-light dark:text-dark dark:bg-light cursor-pointer font-medium rounded px-3 sm:px-5 py-1"
+            className="bg-dark text-light dark:text-dark dark:bg-light cursor-pointer font-medium rounded px-3 sm:px-5 py-1 transition duration-150 ease-in-out transition-all hover:scale-105 active:scale-90"
           />
         </form>
         <div className="flex items-center mt-8 mb-8">

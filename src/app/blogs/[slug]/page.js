@@ -9,6 +9,7 @@ import siteMetadata from "@/src/utils/siteMetaData";
 import ScrollTopBtn from "@/src/components/ScrollTop/";
 import RenderMdx from "@/src/components/Blog/RenderMdx";
 import BlogDetails from "@/src/components/Blog/BlogDetails";
+import TopScrollProgressBar from "@/src/components/TopScrollProgressBar/";
 
 const getImageListFromBlog = (blog) => {
   let imageList = [siteMetadata.socialBanner];
@@ -113,6 +114,7 @@ export default function BlogPage({ params }) {
       />
       {/* //? !---end--- for SEO ---end---! */}
 
+      <TopScrollProgressBar />
       <article>
         <div className="mb-8 text-center relative w-full h-[70vh] bg-dark">
           <div className="w-full z-10 flex flex-col items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
@@ -170,7 +172,9 @@ export default function BlogPage({ params }) {
                           </span>
                         ) : null}
 
-                        <span className="hover:underline">{heading.text}</span>
+                        <span className="no-underline underline-offset-2 transition duration-150 ease-in-out transition-all hover:underline hover:scale-105 active:scale-90">
+                          {heading.text}
+                        </span>
                       </a>
                     </li>
                   );

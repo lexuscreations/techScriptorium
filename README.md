@@ -1,26 +1,51 @@
-### For files checkout - [github/lexuscreations/techScriptoriumFiles](https://github.com/lexuscreations/techScriptoriumFiles/tree/main)
-
-<!-- https://favicon.io/favicon-converter/ -->
-<!-- supabase -->
-<!-- https://www.react-hook-form.com/form-builder/ -->
-<!-- env.example missing -->
-<!-- need to update readme links and author details -->
-<!-- need to update this meta inf also src\utils\siteMetaData.js -->
-<!-- also need to update steps and commands of supabase setup as well -->
-<!-- need to re-create figma and need to re-create this app UI -->
-<!-- and last, need to update all steps and figma and screenshots with links -->
-<!-- https://react-svgr.com/playground/ -->
-<!-- next.config.js -> compiler -> removeConsole -> true -->
-<!-- install nvm and as you cd into this project folder first run command `nvm use` and then fo run the project -->
-<!-- do `npm i cspell` if you don't have https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker this vs-code extension installed -->
-<!-- do npm i prettier if you don't have https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode this vs-code extension installed -->
-<!-- need to updated DOCUMENTATION.md -->
-<!-- code --list-extensions > .vscode/extensions -->
-<!-- git bash - https://git-scm.com/downloads -->
-<!-- socialBanner need to update, in utils/siteMetaData.js -->
-<!-- copyCodeToClipboardBtn, onPageVeryTopHorizontalLine, progressHorizontalTopLine functionality -->
+### To access the TechScriptorium blog's files and code, check out this link: [github/lexuscreations/techScriptoriumFiles](https://github.com/lexuscreations/techScriptoriumFiles/tree/main)
 
 <hr />
+
+[supabase](https://supabase.com/)
+[react-hook-form](https://www.react-hook-form.com/)
+[react-svgr/playground](https://react-svgr.com/playground/)
+[react-hook-form/form-builder](https://www.react-hook-form.com/form-builder/)
+
+- To run this app locally, create a `.env.local` file in the root directory and refer to `.env.example` for guidance.
+
+- After implementing your preferred customizations, be sure to update the `src\utils\siteMetaData.js` file _metaInfo_.
+  - You also need to update all meta details, links, and author information throughout the entire app, including the README.
+
+<hr />
+
+- Before production, locate and set `removeConsole` to true in the `compiler` object within `next.config.js` in the `root` directory.
+
+- To set up your environment, install NVM. Once installed, navigate to the project folder and run the command `nvm use` before launching the project.
+
+  - Additionally, you can download NVM for Windows from this link: [github/coreybutler/nvm-windows](https://github.com/coreybutler/nvm-windows)
+
+- If you don't have the VS Code extension [`Code Spell Checker`](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) installed, please run [`npm i cspell`](https://www.npmjs.com/package/cspell).
+
+<hr />
+
+### Optional
+
+- To list your installed VS Code extensions, use the command `code --list-extensions`, and save the list to `.vscode/extensions` using `code --list-extensions > extensions` this command.
+
+- To install "Git Bash", you can download it from [git-scm/downloads](https://git-scm.com/downloads).
+
+<hr />
+
+### Library, framework, Tools and Resources / software usage
+
+- [nextjs.org](https://nextjs.org/)
+- [react.dev](https://react.dev/)
+- [legacy.reactjs.org](https://legacy.reactjs.org/)
+- [contentlayer.dev](https://contentlayer.dev/)
+
+<!-- also need to update steps and commands of supabase setup as well -->
+<!-- need to create figma and then based on that, need to re-create this app and then also need to update that figma link and screenshots in his readme-->
+<!-- need to updated DOCUMENTATION.md -->
+
+<!-- copyCodeToClipboardBtn functionality and loading functionality -->
+
+<!-- <hr /> -->
 
 <!-- # Next.js 13 Blog Tutorial: Build SEO Optimized Personal Blog with Next.js, Contentlayer, and Tailwind CSS 🔥
 

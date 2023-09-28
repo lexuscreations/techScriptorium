@@ -9,10 +9,9 @@ const siteMetadata = {
     "Dive into the world of coding, programming, and technology with TechScriptorium's extensive collection of expertly crafted technical articles and insightful programming blogs. Stay up-to-date with the latest trends, tips, and tricks in the tech industry. Explore our repository of knowledge and elevate your technical skills today.",
   language: "en-us",
   theme: "system", // system, dark or light
-  siteUrl: "https://techscriptorium.vercel.app", // your website URL
+  siteUrl: "https://techscriptorium.vercel.app",
   siteLogo: "/logo.png",
-  socialBanner: "/social-banner.png", // add social banner in the public folder
-  email: "lokeshvishwakarma2611@gmail.com",
+  socialBanner: "/social-banner.png",
   github: "https://github.com/lexuscreations/",
   twitter: "https://twitter.com",
   facebook: "https://facebook.com",
@@ -28,7 +27,7 @@ const siteMetadata = {
     "2+ Years of experience",
     "Data Structures and Algorithms",
     "Problem-Solving and Logic Building Skills",
-    "LeetCode, and HackerRank",
+    "LeetCode, and HackerRank"
   ],
   skillList: [
     "next.JS",
@@ -57,8 +56,8 @@ const siteMetadata = {
     "OOPS",
     "jQuery",
     "webSockets",
-    "Chrome Extensions",
-  ],
+    "Chrome Extensions"
+  ]
 };
 
 module.exports = siteMetadata;

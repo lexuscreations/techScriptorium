@@ -6,7 +6,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors },
+    formState: { errors }
   } = useForm();
   const onSubmit = (data) => console.log(data);
   console.log(errors);
@@ -51,7 +51,7 @@ export default function ContactForm() {
       <input
         type="submit"
         value="send request"
-        className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer"
+        className="mt-8 font-medium inline-block capitalize text-lg sm:text-xl py-2 sm:py-3 px-6 sm:px-8 border-2 border-solid border-dark dark:border-light rounded cursor-pointer transition duration-150 ease-in-out transition-all hover:scale-105 active:scale-90"
       />
     </form>
   );

@@ -5,7 +5,6 @@ import Footer from "@/src/components/Footer";
 import Header from "@/src/components/Header";
 import { Inter, Manrope } from "next/font/google";
 import siteMetadata from "@/src/utils/siteMetaData";
-import TopScrollProgressBar from "@/src/components/TopScrollProgressBar/";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -72,8 +71,6 @@ export default function RootLayout({ children }) {
             }
           `}
         </Script>
-
-        <TopScrollProgressBar />
 
         <Header />
 

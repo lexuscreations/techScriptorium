@@ -1,5 +1,6 @@
 "use client";
 
+import { debounce } from "@/src/utils/";
 import { useEffect, useState } from "react";
 
 export default function TopScrollProgressBar() {
@@ -16,8 +17,10 @@ export default function TopScrollProgressBar() {
       setScrollPercentage(scrollPercent);
     };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    const debouncedHandleScroll = debounce(handleScroll, 10);
+
+    window.addEventListener("scroll", debouncedHandleScroll);
+    return () => window.removeEventListener("scroll", debouncedHandleScroll);
   }, []);
 
   return (
