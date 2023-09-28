@@ -10,9 +10,13 @@
   "description": "TechScriptorium: Your Gateway to In-Depth Technical Articles and Expert Programming Blogs. Explore a Wealth of Knowledge in the World of Technology.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lexuscreations/techScriptorium",
+    "url": "https://github.com/lexuscreations/techScriptorium.git",
     "directory": ""
   },
+  "bugs": {
+    "url": "https://github.com/lexuscreations/techScriptorium/issues"
+  },
+  "homepage": "https://techscriptorium.vercel.app",
   "license": "MIT",
   "keywords": [
     "TechScriptorium",
