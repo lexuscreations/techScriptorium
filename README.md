@@ -42,6 +42,7 @@
 <!-- need to create figma and then based on that, need to re-create this app and then also need to update that figma link and screenshots in his readme-->
 <!-- need to updated DOCUMENTATION.md -->
 
+<!-- need to update, supabase stewps and fanicon generator website -->
 <!-- copyCodeToClipboardBtn functionality and loading functionality -->
 
 <!-- <hr /> -->
