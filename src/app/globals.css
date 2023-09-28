@@ -16,18 +16,38 @@ html {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  border-radius: 5px;
+  background: rgb(230, 237, 255);
+  background: -moz-linear-gradient(
+    140deg,
+    rgb(188 207 255) 0%,
+    rgba(136, 154, 205, 1) 50%,
+    rgb(139 67 253) 100%
+  );
+  background: -webkit-linear-gradient(
+    140deg,
+    rgb(188 207 255) 0%,
+    rgba(136, 154, 205, 1) 50%,
+    rgb(139 67 253) 100%
+  );
+  background: linear-gradient(
+    140deg,
+    rgb(188 207 255) 0%,
+    rgba(136, 154, 205, 1) 50%,
+    rgb(139 67 253) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e6edff",endColorstr="#3d5598",GradientType=1);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+  background: #404040;
   border-radius: 5px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #292929;
 }
 
 /* --------end--------- scrollbar customize ---------end-------- */
