@@ -2,11 +2,6 @@
 
 <hr />
 
-[supabase](https://supabase.com/)
-[react-hook-form](https://www.react-hook-form.com/)
-[react-svgr/playground](https://react-svgr.com/playground/)
-[react-hook-form/form-builder](https://www.react-hook-form.com/form-builder/)
-
 - To run this app locally, create a `.env.local` file in the root directory and refer to `.env.example` for guidance.
 
 - After implementing your preferred customizations, be sure to update the `src\utils\siteMetaData.js` file _metaInfo_.
@@ -34,10 +29,14 @@
 
 ### Library, framework, Tools and Resources / software usage
 
-- [nextjs.org](https://nextjs.org/)
 - [react.dev](https://react.dev/)
-- [legacy.reactjs.org](https://legacy.reactjs.org/)
+- [supabase](https://supabase.com/)
+- [nextjs.org](https://nextjs.org/)
 - [contentlayer.dev](https://contentlayer.dev/)
+- [legacy.reactjs.org](https://legacy.reactjs.org/)
+- [react-hook-form](https://www.react-hook-form.com/)
+- [react-svgr/playground](https://react-svgr.com/playground/)
+- [react-hook-form/form-builder](https://www.react-hook-form.com/form-builder/)
 
 <!-- also need to update steps and commands of supabase setup as well -->
 <!-- need to create figma and then based on that, need to re-create this app and then also need to update that figma link and screenshots in his readme-->
