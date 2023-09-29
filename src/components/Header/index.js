@@ -75,15 +75,15 @@ const Header = () => {
       <LeftLogo click={click} />
 
       <button
-        className="inline-block sm:hidden mr-4 transition-all ease duration-300 relative py-2"
+        className="inline-block sm:hidden mr-4 transition transition-all ease duration-300 relative py-2"
         onClick={() => setClick(true)}
         aria-label="Hamburger Menu"
         style={{ top: !click ? "0rem" : "-5rem" }}
       >
-        <div className="w-6 cursor-pointer transition-all ease duration-300">
+        <div className="w-6 cursor-pointer transition transition-all ease duration-300">
           <div className="relative">
             <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200 left-0"
+              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition transition-all ease duration-200 left-0"
               style={{
                 transform: click
                   ? "rotate(-45deg) translateY(0)"
@@ -93,13 +93,13 @@ const Header = () => {
               &nbsp;
             </span>
             <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200 left-0"
+              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition transition-all ease duration-200 left-0"
               style={{ opacity: click ? 0 : 1 }}
             >
               &nbsp;
             </span>
             <span
-              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition-all ease duration-200 left-0"
+              className="absolute top-0 inline-block w-full h-0.5 bg-dark dark:bg-light rounded transition transition-all ease duration-200 left-0"
               style={{
                 transform: click
                   ? "rotate(45deg) translateY(0)"
@@ -114,7 +114,7 @@ const Header = () => {
 
       <nav
         ref={smNavElRef}
-        className={`${navS_comm_classS} transition-all ease duration-300 px-6 sm:px-8 flex sm:hidden`}
+        className={`${navS_comm_classS} transition transition-all ease duration-300 px-6 sm:px-8 flex sm:hidden`}
         style={{ top: click ? "1rem" : "-5rem" }}
       >
         <NavCommComp uuidForIcon={`__1nd_largeSrc_nav__${uuid}`} />

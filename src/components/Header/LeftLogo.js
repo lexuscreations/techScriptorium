@@ -6,7 +6,7 @@ const Logo = ({ click }) => {
   return (
     <Link
       href="/"
-      className="flex items-center text-dark dark:text-light transition-all ease duration-300 relative sm:static"
+      className="flex items-center text-dark dark:text-light transition transition-all ease duration-300 relative sm:static"
       style={{ top: !click ? "0rem" : "-5rem" }}
     >
       <div className="w-8 md:w-12 rounded-full overflow-hidden mr-1 md:mr-0">

@@ -21,7 +21,7 @@ const RightSocialLinks = () => {
               uid={`header_social_link_${curLinkObj.key}_${uuid}`}
               className={`${
                 curLinkObj.key === "github" ? "dark:fill-light" : ""
-              } hover:scale-125 transition-all ease duration-200`}
+              } hover:scale-125 transition transition-all ease duration-200`}
             />
           </a>
         ) : null
