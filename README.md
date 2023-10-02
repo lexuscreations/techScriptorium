@@ -38,6 +38,8 @@
 - [react-svgr/playground](https://react-svgr.com/playground/)
 - [react-hook-form/form-builder](https://www.react-hook-form.com/form-builder/)
 
+<!-- https://uiwjs.github.io/react-md-editor/ -->
+<!-- https://supabase.com/dashboard/project/yjavrhmhbivqmvjacuei/api?resource=views -->
 <!-- also need to update steps and commands of supabase setup as well -->
 <!-- need to create figma and then based on that, need to re-create this app and then also need to update that figma link and screenshots in his readme-->
 <!-- need to updated DOCUMENTATION.md -->
