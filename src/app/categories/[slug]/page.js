@@ -41,7 +41,9 @@ export async function generateMetadata({ params }) {
     keywords: `web development blogs, tutorials, articles, insights, ${[
       ...new Set(allCategories)
     ].join(", ")}`,
-    canonical: `${siteMetadata.siteUrl}/categories/${slug}`
+    alternates: {
+      canonical: `/categories/${slug}`
+    }
   };
 }
 

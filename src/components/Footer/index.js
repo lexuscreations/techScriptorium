@@ -4,7 +4,11 @@ import Link from "next/link";
 import { useId } from "react";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { isContainsDotComThenSlash } from "@/src/utils";
-import { socialLinksMappedArr } from "@/src/components/config";
+import { socialLinksIconMappedArr as iconsMappedArr } from "@/src/components/config";
+
+const socialLinksIconMappedArr = Array.isArray(iconsMappedArr)
+  ? [...iconsMappedArr]
+  : [];
 
 const Footer = () => {
   const uuid = useId();
@@ -46,7 +50,7 @@ const Footer = () => {
           />
         </form>
         <div className="flex items-center mt-8 mb-8">
-          {socialLinksMappedArr.map((curLinkObj, ind) =>
+          {socialLinksIconMappedArr.map((curLinkObj, ind) =>
             isContainsDotComThenSlash(siteMetadata[curLinkObj.key]) ? (
               <a
                 key={`footer_social_${ind}`}

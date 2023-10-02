@@ -14,7 +14,7 @@ const SEO_Data = {
     ", "
   )}, ${siteMetadata.skillList.join(", ")}`,
   alternates: {
-    canonical: `${siteMetadata.siteUrl}/about`
+    canonical: `/about`
   }
 };
 

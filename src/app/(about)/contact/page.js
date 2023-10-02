@@ -11,7 +11,7 @@ const SEO_Data = {
   keywords:
     "contact, contact form, get in touch, reach out, send a message, connect, collaborate, message, contact me",
   alternates: {
-    canonical: `${siteMetadata.siteUrl}/contact`
+    canonical: `/contact`
   }
 };
 

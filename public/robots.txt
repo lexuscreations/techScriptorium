@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://techscriptorium.vercel.app
+
+# Sitemaps
+Sitemap: https://techscriptorium.vercel.app/sitemap.xml

@@ -1,14 +1,18 @@
 import { useId } from "react";
 import siteMetadata from "@/src/utils/siteMetaData";
 import { isContainsDotComThenSlash } from "@/src/utils";
-import { socialLinksMappedArr } from "@/src/components/config";
+import { socialLinksIconMappedArr as iconsMappedArr } from "@/src/components/config";
+
+const socialLinksIconMappedArr = Array.isArray(iconsMappedArr)
+  ? [...iconsMappedArr]
+  : [];
 
 const RightSocialLinks = () => {
   const uuid = useId();
 
   return (
     <div className="hidden sm:flex items-center">
-      {socialLinksMappedArr.map((curLinkObj, ind) =>
+      {socialLinksIconMappedArr.map((curLinkObj, ind) =>
         isContainsDotComThenSlash(siteMetadata[curLinkObj.key]) ? (
           <a
             key={`header_social_${ind}`}

@@ -3,40 +3,40 @@ import {
   GithubIcon,
   LinkedinIcon,
   TwitterIcon,
-  YoutubeIcon,
+  YoutubeIcon
 } from "@/src/components/Icons";
 
 export const membersCommunityCount = "5+";
 
-export const socialLinksMappedArr = [
+export const socialLinksIconMappedArr = [
   {
     key: "github",
     label: "Github",
-    Icon: GithubIcon,
+    Icon: GithubIcon
   },
   {
     key: "twitter",
     label: "Twitter",
-    Icon: TwitterIcon,
+    Icon: TwitterIcon
   },
   {
     key: "facebook",
     label: "Facebook",
-    Icon: () => <h2>Facebook</h2>,
+    Icon: () => <h2>Facebook</h2>
   },
   {
     key: "youtube",
     label: "Youtubeb",
-    Icon: YoutubeIcon,
+    Icon: YoutubeIcon
   },
   {
     key: "linkedin",
     label: "LinkedIn",
-    Icon: LinkedinIcon,
+    Icon: LinkedinIcon
   },
   {
     key: "dribbble",
     label: "Dribbble",
-    Icon: DribbbleIcon,
-  },
+    Icon: DribbbleIcon
+  }
 ];

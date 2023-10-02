@@ -50,7 +50,9 @@ const generateSEO_DataFromBlog = (blog, slug) => ({
     description: blog.description,
     images: blog.imagesForOG
   },
-  canonical: `${siteMetadata.siteUrl}/blogs/${slug}`
+  alternates: {
+    canonical: `/blogs/${slug}`
+  }
 });
 
 export const generateStaticParams = async () =>

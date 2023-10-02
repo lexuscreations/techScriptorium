@@ -5,6 +5,10 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import siteMetadata from "@/src/utils/siteMetaData";
 
+const skillList = Array.isArray(siteMetadata.skillList)
+  ? [...siteMetadata.skillList]
+  : [];
+
 const animations = [
   "fade",
   "fade-up",
@@ -52,7 +56,7 @@ const Skills = () => {
         <strong>I'm comfortable in...</strong>
       </span>
       <ul className="flex flex-wrap mt-8 justify-center  xs:justify-start">
-        {siteMetadata.skillList.map((item, index) => (
+        {skillList.map((item, index) => (
           <li
             key={index}
             data-aos={getRandomAnimation()}
