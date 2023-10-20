@@ -19,6 +19,7 @@
   },
   "svg.preview.mode": "svg",
   "editor.formatOnSave": true,
-  "window.zoomLevel": 1,
-  "glassit.alpha": 245
+  "window.zoomLevel": 0,
+  "glassit.alpha": 245,
+  "workbench.editor.empty.hint": "hidden"
 }
