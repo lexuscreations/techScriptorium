@@ -11,15 +11,12 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorTheme": "Community Material Theme Ocean High Contrast",
   "editor.fontFamily": "'Cascadia Code', Consolas, 'Courier New', monospace",
-  "security.workspace.trust.untrustedFiles": "open",
   "editor.fontLigatures": true,
-  "workbench.editor.untitled.hint": "hidden",
   "[svg]": {
     "editor.defaultFormatter": "jock.svg"
   },
   "svg.preview.mode": "svg",
   "editor.formatOnSave": true,
   "window.zoomLevel": 0,
-  "glassit.alpha": 245,
-  "workbench.editor.empty.hint": "hidden"
+  "glassit.alpha": 245
 }
